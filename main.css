@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,800&display=swap");
+/* colors
+#61C08C green
+#FDF953 yellow
+#C35D91 pink
+#121539 navy */
+html {
+  height: 100%;
+}
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #61c08c;
+}
+body {
+  background: linear-gradient(135deg, #fdfa53, #c35d91);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+nav {
+  border: solid green 3px;
+  display: flex;
+  justify-content: center;
+}
+ul {
+  border: solid blue 3px;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 33%;
+}
+nav li {
+  border: solid purple 3px;
+  list-style-type: none;
+  padding: 0;
+}
+#mainContent {
+  border: black 4px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#headingContainer {
+  /* border: solid 3px red; */
+  background-image: url("images/wave.jpeg");
+  background-position: 0 45%;
+  background-size: cover;
+  background-color: #61c08c;
+  border-radius: 10px;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  
+  transition: border-radius 3s;
+  transition-timing-function: linear;
+}
+#headingContainer:hover {
+  border-radius: 200px;
+}
+
+h1 {
+  color: #c35d91;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 100px;
+  transform: rotate(-7deg);
+  height: 150px;
+  text-shadow: -4px 3px 0px #121539;
+  
+}
+ h1:hover {
+  animation-name: spinner;
+  animation-duration: 2s;
+ }
+
+@keyframes spinner {
+  0% {
+    transform: rotate(-7deg)
+  }
+  50% {
+    color: aqua;
+  }
+  100% {
+    transform: rotate(353deg)
+  }
+}
+
+#basicInfoContainer {
+  border: orange solid 3px;
+  margin: 20px;
+  width: 50%;
+}
+.fontColor {
+  color: #121539;
+}
+.textContainer {
+  background-color: #61c08c;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+p {
+  color: #121539;
+  text-align: center;
+}
+#imgContainer {
+  border: solid red 3px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.images {
+  width: 45%;
+  border: solid blue 3px;
+  padding: 5px;
+  margin: 5px;
+}
+#bottomContent {
+  border: green solid 5px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#bottomParagraph {
+  border: solid gold 3px;
+  width: 75%;
+}
